@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#index{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+   
+    background-image: url(https://img.freepik.com/premium-vector/golden-film-strip-isolated-black-background_305440-460.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+}
+
+header nav{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+    font-size: 14px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    width: 50px;
+}
+
+nav #logo h1{
+    font-size: 36px;
+
+    margin-top: 18px;
+    margin-left: 5px;
+
+    color: rgb(207, 163, 41);
+    z-index: 1;
+}
+
+#links a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 17px;
+    color: white;
+}
+
+#links a:hover{
+    color: rgb(207, 163, 41);
+    text-decoration: underline;
+}
+
+#separator{
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background: rgb(207, 163, 41);
+}
+
+#index h1{
+    margin-top: 120px;
+    z-index: 1;
+    font-size: 3em;
+}
+
+#index p{
+    z-index: 1;
+    font-size: 19px;
+}
+
+#search{
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.container, #res-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar{
+    background-color: white;
+    font-size: 16px;
+    width: 122.5%;
+    height: 53px;
+    padding: 20px 16px 20px;
+
+    border: 2px solid rgb(207, 163, 41);
+    border-radius: 53px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.button, .svbutton{
+    background-color:  rgb(207, 163, 41);
+    padding: 5px 15px;
+    border-radius: 50px;
+
+    color: white;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sbutton{
+    background-color:  rgb(207, 163, 41);
+    padding: 18px 16px 20px;
+    border-radius: 50px;
+    margin-left: -20px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.sbutton:hover, .button:hover, .svbutton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(207, 163, 41);
+}
+
+.result{
+    margin-top: 10px;
+    height: 62vh;
+    width: 74vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left{   
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:  rgb(207, 163, 41) solid 2px;
+}
+
+.left .img{
+    width: auto;
+    height: auto;
+    max-height :100%;
+    max-width: 100%;
+}
+
+.right {
+    height: 100%;
+    width: 70%;
+    background-color: rgb(254, 249, 230);
+
+    color: black;
+    border:  rgb(207, 163, 41) solid 2px;
+    border-radius: 0% 5% 5% 0%;
+}
+
+.right h2, .right h3{
+    width: 95%;
+    text-align: left;
+    
+    margin: 10px;
+}
+
+.right p{
+    width: 95%;
+    text-align: left;
+    font-size: 16px;
+    
+    margin: 10px;
+}
+
+#end{
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+  
+    background-color: rgb(163, 126, 25);
+}
+  
+#end p{
+    font-style: oblique;
+    font-family: 'Nunito',Cambria;
+    color: black;
+}
+
+
+@media (max-width: 900px) {
+    header nav{
+        font-size: 14px;
+    }
+
+    #links a{
+        margin: 17px 10px;
+    }
+
+    #logo img{
+        width: 40px;
+    }
+
+    nav #logo h1{
+        font-size: 30px;
+        font-weight: bold;
+        
+        padding: 0;
+        margin-left: 1px;
+    }
+
+    #index h1 {
+        font-size: 2.5em;
+        padding: 0 40px;
+    }
+
+    #index p{
+        font-size: 15px;
+        padding: 0 40px;
+    }
+} 
+
+@media (max-width: 700px){
+    
+    #index h1 {
+        font-size: 2em;
+        padding: 0 30px;
+    }
+   
+    #index p{
+        padding: 0 30px;
+    }
+
+    #separator {
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+}

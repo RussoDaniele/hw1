@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    background-color:  rgb(207, 163, 41);
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    text-align: center;
+    height: 70vh;
+    width: 72vw;
+}
+
+#left{
+    background-image: url(https://img.freepik.com/premium-vector/golden-film-strip-isolated-black-background_305440-460.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 100%;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border:  rgb(207, 163, 41) solid 2px;
+    border-radius: 5% 0% 0% 5%;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#logo img{
+    position: absolute;
+    top: 0.5vh;
+    left: 0.5vw;
+    width: 10%;
+}
+
+#logo h1{
+    font-size: 40px;
+    color: white;
+    padding-left: 20px;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+}
+
+#left #overlay{
+    border: rgba(0, 0, 0, .3) solid 1px;
+    border-radius: 5% 0% 0% 5%;
+}
+
+#right {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 249, 230);
+
+    z-index: 1;
+
+    border:  rgb(207, 163, 41) solid 2px;
+    border-radius: 0% 5% 5% 0%;
+}
+
+#right h5{
+    font-size: 18px;
+}
+
+.errorp{
+    display: block;
+    margin-left: 20px;
+
+    color: #e12033;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    
+    width: 95%;
+}
+
+.username, .password{
+    width: 95%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+
+form input{
+    width: 100%;
+    height: 35px;
+    padding: 6px 12px;
+    border: 1px solid rgb(207, 163, 41);
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn input{
+    border-radius: 50px;
+    padding: 16px 14px 18px;
+
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+  
+    letter-spacing: 2px;
+    color: black;
+    background-color: rgb(207, 163, 41);
+}
+
+.login-btn input:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgb(207, 163, 41);
+}
+
+#right h4{
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+#signup {
+    margin-right: 30px;
+}
+
+.signup-btn{
+    display: block;
+
+    border-radius: 50px;
+    border: 3px solid rgb(207, 163, 41);
+    padding: 16px 14px 18px;
+    text-decoration: none;
+    font-size: 16px;
+
+    color: black;
+
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.signup-btn:hover{
+    background-color: white;
+    color: rgb(207, 163, 41);
+    cursor: pointer;
+}

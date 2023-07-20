@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    background-color:  rgb(207, 163, 41);
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main{
+    text-align: center;
+    height: 82vh;
+    width: 84vw;
+}
+
+#left{
+    background-image: url(https://img.freepik.com/premium-vector/golden-film-strip-isolated-black-background_305440-460.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 100%;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border:  rgb(207, 163, 41) solid 2px;
+    border-radius: 5% 0% 0% 5%;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#logo img{
+    position: absolute;
+    top: 0.5vh;
+    left: 0.5vw;
+    width: 10%;
+}
+
+#logo h1{
+    font-size: 40px;
+    color: white;
+    padding-left: 20px;
+}
+
+#overlay{
+    background-color: rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+}
+
+#left #overlay{
+    border: rgba(0, 0, 0, .3) solid 1px;
+    border-radius: 5% 0% 0% 5%;
+}
+
+#right {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 249, 230);
+
+    z-index: 1;
+
+    border:  rgb(207, 163, 41) solid 2px;
+    border-radius: 0% 5% 5% 0%;
+}
+
+#right form{
+    margin-top: 20px;
+}
+
+.username, .email, .password, .confirm_password{
+    width: 95%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    
+    margin: 8px;
+}
+
+form input{
+    width: 100%;
+    height: 35px;
+    padding: 6px 12px;
+    border: 1px solid rgb(207, 163, 41);
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+form img{
+    opacity : 0;
+    width: 14px;
+    margin-right: 10px;
+}
+
+form span {
+    opacity: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.errorp label, .errorp{
+    color: #d01b2d;
+}
+
+.errorp span {
+    opacity: 1;
+    font-size: 14px;
+    color: #d01b2d;
+}
+
+.errorp img {
+    opacity: 1;
+}
+
+.errorp input{
+    border-color: #d01b2d;
+}
+
+.submit {
+    margin-top: 5px;
+}
+
+.submit input{
+    border-radius: 40px;
+    padding: 16px 14px 30px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+    color: black;
+    background-color: rgb(207, 163, 41);
+
+    width: 60%;
+}
+
+.submit input:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(207, 163, 41);
+}
+
+.signup{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.signup a{
+    font-weight: bold;
+    color: rgb(207, 163, 41);
+}
